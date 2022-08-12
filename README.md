@@ -4,21 +4,22 @@ Dias & Dias Parado Ltda., uma empresa do ramo de recrutamento,  está migrando s
 
 Como um usuário, eu preciso ver meus dados da seguinte maneira:
 
-Nome Completo (Capitalizar a primeira letra de cada palavra ex.: Joao Da Silva)
-Duração da entrevista no formato hh:mm
-Descrição (limitado a 80 caracteres com  '..' no final)
-Inicio da entrevista em yyyy-MM-ddTHH:mm:ss				
-Fim da entrevista em yyyy-MM-ddTHH:mm:ss
+* Nome Completo (Capitalizar a primeira letra de cada palavra ex.: Joao Da Silva)
+* Duração da entrevista no formato hh:mm
+* Descrição (limitado a 80 caracteres com  '..' no final)
+* Inicio da entrevista em yyyy-MM-ddTHH:mm:ss				
+* Fim da entrevista em yyyy-MM-ddTHH:mm:ss
 
 Atualmente os dados guardados estão no seguinte formato:
 
 Nome
-Duracao em minutos
-Descricao
-Data Inicial no formato yyyy-MM-dd
-Hora Inicial no formato HH:mm:ss
-Data Final no formato yyyy-MM-dd
-Hora Final no formato HH:mm:ss
+
+* Duracao em minutos
+* Descricao
+* Data Inicial no formato yyyy-MM-dd
+* Hora Inicial no formato HH:mm:ss
+* Data Final no formato yyyy-MM-dd
+* Hora Final no formato HH:mm:ss
 
 
 O analista de sistemas analisou as informações existentes e criou o seguinte Data-mapping: 		
