@@ -62,6 +62,9 @@ Exemplo de um request:
 }
 ```
 
+## Como comecar meu TDD do zero?
+Apague tudo do projeto, com excecao da interface `NovaPlataformaMapperService`
+
 ## Desafio adicional
 
 Usar algum pattern para evitar muitas dependencias em NovaPlataformaMapperServiceImpl
