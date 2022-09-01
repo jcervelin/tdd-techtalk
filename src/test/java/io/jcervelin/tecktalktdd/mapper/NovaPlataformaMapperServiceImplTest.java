@@ -1,7 +1,6 @@
 package io.jcervelin.tecktalktdd.mapper;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import io.jcervelin.tecktalktdd.exceptions.ParametroInvalidoException;
 import io.jcervelin.tecktalktdd.mapper.regras.Capitalizador;
 import io.jcervelin.tecktalktdd.mapper.regras.ConversorDuracao;
 import io.jcervelin.tecktalktdd.mapper.regras.TruncadorDescricao;

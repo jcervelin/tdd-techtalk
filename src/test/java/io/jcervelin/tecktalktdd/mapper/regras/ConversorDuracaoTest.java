@@ -21,9 +21,9 @@ class ConversorDuracaoTest {
         String request = "90";
         LocalTime esperado = LocalTime.of(1,30);
 
-        LocalTime retorno = alvo.converter(request);
+        String retorno = alvo.executar(request);
 
-        assertThat(retorno).isEqualTo(esperado);
+        assertThat(retorno).isEqualTo(esperado.toString());
     }
 
     @Test
@@ -32,7 +32,7 @@ class ConversorDuracaoTest {
 
         String erroEsperado = "Numero invalido [banana de pijama]";
         final ParametroInvalidoException parametroInvalidoException = org.junit.jupiter.api.Assertions.assertThrows(ParametroInvalidoException.class,
-                () -> alvo.converter(request));
+                () -> alvo.executar(request));
 
         assertThat(parametroInvalidoException.getMessage()).isEqualTo(erroEsperado);
     }

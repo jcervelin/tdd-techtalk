@@ -17,7 +17,7 @@ class TruncadorDescricaoTest {
     public void descricaoDeveRetornarComSucesso() {
         String request = "O candidato se mostrou apreensivo ao ser perguntado sobre seu histórico escolar";
         String esperado = "O candidato se mostrou apreensivo ao ser perguntado sobre seu histórico escolar";
-        String retorno = alvo.truncar(request);
+        String retorno = alvo.executar(request);
 
         assertEquals(esperado, retorno);
     }
@@ -26,7 +26,7 @@ class TruncadorDescricaoTest {
     public void descricaoDeveRetornarTruncado() {
         String request = "O candidato Sálvio se mostrou apreensivo ao ser perguntado sobre seu histórico escolar";
         String esperado = "O candidato Sálvio se mostrou apreensivo ao ser perguntado sobre seu histórico..";
-        String retorno = alvo.truncar(request);
+        String retorno = alvo.executar(request);
 
         assertEquals(esperado, retorno);
     }

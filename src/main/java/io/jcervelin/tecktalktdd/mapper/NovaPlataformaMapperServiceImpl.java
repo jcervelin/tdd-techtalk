@@ -26,9 +26,9 @@ public class NovaPlataformaMapperServiceImpl implements NovaPlataformaMapperServ
             final PerfilCandidato perfilCandidato = objectMapper.readValue(metadata, PerfilCandidato.class);
 
             NovoPerfilCandidato novoPerfilCandidato = new NovoPerfilCandidato();
-            novoPerfilCandidato.setNome(capitalizador.capitalizar(perfilCandidato.getNome()));
-            novoPerfilCandidato.setDuracao(conversorDuracao.converter(perfilCandidato.getDuracaoEmMinutos()));
-            novoPerfilCandidato.setDescricao(truncadorDescricao.truncar(perfilCandidato.getDescricao()));
+            novoPerfilCandidato.setNome(capitalizador.executar(perfilCandidato.getNome()));
+            novoPerfilCandidato.setDuracao(conversorDuracao.executar(perfilCandidato.getDuracaoEmMinutos()));
+            novoPerfilCandidato.setDescricao(truncadorDescricao.executar(perfilCandidato.getDescricao()));
 
             return objectMapper.writeValueAsString(novoPerfilCandidato);
 

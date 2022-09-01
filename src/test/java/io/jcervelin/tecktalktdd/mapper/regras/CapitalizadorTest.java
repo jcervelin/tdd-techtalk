@@ -22,7 +22,7 @@ class CapitalizadorTest {
         String request = "joao da silva";
         String esperado = "Joao Da Silva";
 
-        String retorno = alvo.capitalizar(request);
+        String retorno = alvo.executar(request);
 
         Assertions.assertEquals(esperado, retorno);
     }
@@ -32,7 +32,7 @@ class CapitalizadorTest {
         String request = "joAo da silva";
         String esperado = "Joao Da Silva";
 
-        String retorno = alvo.capitalizar(request);
+        String retorno = alvo.executar(request);
 
         Assertions.assertEquals(esperado, retorno);
     }
@@ -43,7 +43,7 @@ class CapitalizadorTest {
 
         String msgEsperada = "Nome é obrigatorio";
         ParametroInvalidoException retorno = Assertions.assertThrows(ParametroInvalidoException.class,
-                () -> alvo.capitalizar(request));
+                () -> alvo.executar(request));
 
         Assertions.assertEquals(msgEsperada, retorno.getMessage());
     }

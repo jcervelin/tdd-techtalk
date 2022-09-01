@@ -14,8 +14,8 @@ class ClasseExistenteTest {
     @InjectMocks
     private ClasseExistente target;
 
-    @Spy
-    private Dependencia mockDependencia;
+//    @Spy
+//    private Dependencia mockDependencia;
 
     @Test
     public void deveRetornarNomeInteiro() {
@@ -31,13 +31,13 @@ class ClasseExistenteTest {
         Assertions.assertEquals("Parametros obrigatorios", retorno.getMessage());
     }
 
-    @Test
-    public void deveRetornarNomeInteiroComSegundoNome() {
-        Mockito.doReturn("Pereira").when(mockDependencia).retornaSegundoNome("Francisco");
-
-        final String retorno = target.retornaNomeInteiro("Sr.", "Joao", "Francisco","Silva");
-        final String esperado = "Sr. joao Pereira SILVA";
-        Assertions.assertEquals(esperado, retorno);
-    }
+//    @Test
+//    public void deveRetornarNomeInteiroComSegundoNome() {
+//        Mockito.doReturn("Pereira").when(mockDependencia).retornaSegundoNome("Francisco");
+//
+//        final String retorno = target.retornaNomeInteiro("Sr.", "Joao", "Francisco","Silva");
+//        final String esperado = "Sr. joao Pereira SILVA";
+//        Assertions.assertEquals(esperado, retorno);
+//    }
 
 }
