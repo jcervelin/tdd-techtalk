@@ -44,9 +44,6 @@ public interface NovaPlataformaMapperService {
 }
 ```
 
-Este serviço de mapeamento deve rejeitar os seguintes requests:											
-* Data final antes de data inicial
-* Duração da entrevista sendo mais que a diferença do fim com o início da entrevista
 
 ## Notas
 
