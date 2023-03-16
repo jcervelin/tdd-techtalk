@@ -7,9 +7,5 @@ import java.time.LocalTime;
 
 @Data
 public class NovoPerfilCandidato {
-    private String nome;
-    private String duracao;
-    private String descricao;
-    private String dataHoraInicio;
-    private String dataHoraFim;
+
 }
