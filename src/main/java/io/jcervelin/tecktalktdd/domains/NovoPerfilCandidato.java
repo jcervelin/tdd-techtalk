@@ -13,3 +13,13 @@ public class NovoPerfilCandidato {
     private String dataHoraInicio;
     private String dataHoraFim;
 }
+
+
+//{
+//        "nome": "Joao Da Silva",
+//        "duracao": "1:00",
+//        "descricao": "O candidato se mostrou apreensivo ao ser perguntado sobre seu histórico escola..",
+//        "dataHoraInicio": "2022-07-20T13:30",
+//        "dataHoraFim": "2022-07-20T14:30",
+//        "horaFim": ""
+//        }

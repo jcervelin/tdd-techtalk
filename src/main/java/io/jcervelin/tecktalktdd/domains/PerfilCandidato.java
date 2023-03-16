@@ -16,9 +16,9 @@ public class PerfilCandidato {
 //{
 //        "nome": "joao da silva",
 //        "duracaoEmMinutos": 60,
-//        "descricao": "O candidato se mostrou apreensivo ao ser perguntado sobre seu histórico escolar",
+//        "descricao": "O candidato se mostrou apreensivo ao ser perguntado sobre seu histórico escolar. No restante foi tudo bem",
 //        "dataInicio": "2022-07-20",
-//        "horaInicio": "13:00",
+//        "horaInicio": "13:30",
 //        "dataFim": "2022-07-20",
-//        "horaFim": "13:30"
+//        "horaFim": "14:30"
 //        }
